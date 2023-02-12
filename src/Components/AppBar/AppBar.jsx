@@ -2,6 +2,7 @@ import React from "react";
 import { Outlet, useNavigate } from "react-router-dom";
 import Drawer from "@mui/material/Drawer";
 import Typography from "@mui/material/Typography";
+import s from "../AppBar/AppBar.module.css"
 
 function AppBar(props) {
   const [state, setState] = React.useState(false);
@@ -25,7 +26,7 @@ function AppBar(props) {
         <React.Fragment key={"top"}>
           <div
             onClick={toggleDrawer(!state)}
-            className={`menu-toggle ${state === true ? "open" : ""} `}
+            className={`${s.menu_toggle} ${state === true ? s.open : ""} `}
           >
             <i></i>
           </div>
@@ -35,7 +36,7 @@ function AppBar(props) {
             onClose={toggleDrawer(false)}
             sx={{ opacity: "0.9" }}
           >
-            <div className="menuItems">
+            <div className={s.menuItems}>
               <Typography
                 align="center"
                 variant="h2"
