@@ -6,12 +6,12 @@ import s from "../Home/Home.module.css";
 function Home() {
   const [intro, setIntro] = useState(true);
 
-  useEffect(()=>{
-    const timer = setTimeout(()=>{
-        setIntro(false);
-    },6800);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIntro(false);
+    }, 6800);
     return () => clearTimeout(timer);
-  },[])
+  }, []);
 
   return (
     <div style={{ backgroundColor: "black" }}>
@@ -21,9 +21,10 @@ function Home() {
         <div className={s.body}>
           <p>Hola! soy Franco Rumisky ☺</p>
           <p>
-            Full Stack Developer = [React, Redux, Node, 
+            Full Stack Web Developer = [React, Redux, Node,
             <NavLink to="">
-              <h4><svg
+              <h4>
+                <svg
                   version="1.1"
                   id="Ebene_1"
                   xmlns="http://www.w3.org/2000/svg"
@@ -141,7 +142,8 @@ function Home() {
                       entre otras
                     </text>
                   </g>
-                </svg></h4>
+                </svg>
+              </h4>
             </NavLink>
             ]
           </p>
@@ -272,9 +274,10 @@ function Home() {
             </NavLink>
           </p>
           <p>
-            Y si mis trabajos son de su agrado no dude en 
+            Y si mis trabajos son de su agrado no dude en
             <NavLink to="/contact">
-              <h4><svg
+              <h4>
+                <svg
                   version="1.1"
                   id="Ebene_1"
                   xmlns="http://www.w3.org/2000/svg"
@@ -392,7 +395,8 @@ function Home() {
                       Contactarme.
                     </text>
                   </g>
-                </svg></h4>
+                </svg>
+              </h4>
             </NavLink>
           </p>
         </div>
