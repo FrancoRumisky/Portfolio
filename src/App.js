@@ -4,7 +4,7 @@ import AppBar from "./Components/AppBar/AppBar";
 import { Navigate, Route, Routes } from "react-router-dom";
 import Home from "./Components/Home/Home";
 import Proyects from "./Components/Proyects/Proyects";
-
+import Contact from "./Components/Contact/Contact";
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
         <Route path="/" element={<AppBar />}>
         <Route path="/" element={<Home/>} />
         <Route path="/proyects" element={<Proyects/>} />
-        <Route path="/contact" element={<div>Contact</div>} />
+        <Route path="/contact" element={<Contact/>} />
         <Route path="*" element={<Navigate replace to="/" />} />
         </Route>
       </Routes>

@@ -96,125 +96,77 @@
   }
 }
 
-.container {
+.background {
+  background-image: url(https://static.vecteezy.com/system/resources/previews/019/857/314/large_2x/gradient-black-background-with-wavy-lines-free-vector.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: black;
-  height: 100vh;
+  min-height: 100vh;
+}
+
+.formContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-wrap: nowrap;
-  background-image: url(https://p4.wallpaperbetter.com/wallpaper/238/702/429/abstract-texture-hd-4k-wallpaper-preview.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
-.container span {
+.contact {
   display: flex;
   color: white;
+  margin-top: 4%;
   font: 500 2em "Roboto";
-  margin-top: 3%;
   letter-spacing: 0.04857em;
 }
 
-.container span p:first-child {
+.contact p:first-child {
   opacity: 0;
   animation: entryleft 1s ease 1s 1 normal forwards;
-  color:var(--golden-color);
+  color: var(--golden-color);
 }
 
-.container span p:last-child {
+.contact p:last-child {
   opacity: 0;
   animation: entryright 1s ease 1.5s 1 normal forwards;
-  color:var(--golden-color);
+  color: var(--golden-color);
 }
 
-.container1 {
-  width: 70%;
-  position: relative;
-  top: 2%;
-}
-
-.container1:hover img {
-  filter: blur(3px);
-}
-
-.container1 button span:before,
-.container1 button span:after {
-  background-color: var(--golden-color);
-}
-
-.container1 nav button {
-  background: var(--golden-color);
-}
-
-.container1 :nth-child(1){
-  align-items: center;
-}
-
-.parrafo {
-  position: relative;
-  text-transform: uppercase;
-  letter-spacing: 0.5em;
-  display: inline-block;
-  width: 40em;
-  border: 4px double var(--golden-color);
-  border-width: 4px 0;
-  padding: 1.5em 0;
-  background-color: rgba(56, 55, 55, 0.137);
-}
-
-.parrafo span {
-  font: 700 4em/1 "Roboto", sans-serif;
-  letter-spacing: 0;
-  padding: 0.25em 0 0.325em;
+.form {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background-color: var(--golden-color);
-
-  text-shadow: 0 0 80px rgba(224, 220, 220, 0.705);
-
-
-  background: url(https://fondosmil.com/fondo/28195.jpg) repeat-x;
-  -webkit-background-clip: text;
-  background-clip: text;
-
-
-  -webkit-text-fill-color: transparent;
-  animation: aitf 80s linear infinite;
-
-
-  transform: translate3d(0, 0, 0);
-  backface-visibility: hidden;
+  flex-direction: column;
+  margin-top: 3%;
+  width: 35%;
 }
 
-
-@keyframes aitf {
-  0% {
-    background-position: 0% 50%;
-  }
-  100% {
-    background-position: 100% 50%;
-  }
+.input {
+  width: 100%;
 }
 
-@media (max-width: 1020px) {
-  .parrafo {
-    padding: 0.5em 0;
-    width: auto;
-  }
+.form span {
+  color: white;
+  margin: 15px 0px;
+}
 
-  .parrafo span {
+.errors {
+  color: red;
+  height: 20px;
+}
+
+@media (max-width: 520px) {
+  .form {
+    width: 65%;
+    margin-top: 0;
+  }
+  .errors {
+    margin: 0px 0 15px;
+  }
+  .contact {
+    margin-top: 0;
     font-size: 1.5em;
   }
-
-  .container1:hover img {
-    filter: none;
-  }
 }
 
-@media(max-width:500px){
-    .container span{
-        font-size: 1.5em;
-    }
+@media (max-width: 360px) and (max-height: 670px) {
+  .contact p {
+    margin: 6px 0;
+  }
 }
