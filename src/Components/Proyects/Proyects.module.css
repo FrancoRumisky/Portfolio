@@ -114,18 +114,18 @@
   font: 500 2em "Roboto";
   margin-top: 3%;
   letter-spacing: 0.04857em;
+  color:var(--golden-color);
 }
 
 .container span p:first-child {
   opacity: 0;
-  animation: entryleft 1s ease 1s 1 normal forwards;
-  color:var(--golden-color);
+  animation: entryleft 1s ease 0.5s 1 normal forwards;
 }
 
 .container span p:last-child {
   opacity: 0;
-  animation: entryright 1s ease 1.5s 1 normal forwards;
-  color:var(--golden-color);
+  animation: entryright 1s ease 1s 1 normal forwards;
+  
 }
 
 .container1 {

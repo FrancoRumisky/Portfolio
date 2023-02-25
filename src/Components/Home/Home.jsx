@@ -22,7 +22,7 @@ function Home() {
           <p>Hola! soy Franco Rumisky ☺</p>
           <p>
             Full Stack Web Developer = [React, Redux, Node,
-            <NavLink to="">
+            <NavLink to="/stack">
               <h4>
                 <svg
                   version="1.1"

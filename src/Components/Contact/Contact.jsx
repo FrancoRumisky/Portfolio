@@ -1,6 +1,8 @@
 import React, { useRef } from "react";
 import { useForm, Controller } from "react-hook-form";
 import { styled } from "@mui/material/styles";
+import Snackbar from "@mui/material/Snackbar";
+import Alert from "@mui/material/Alert";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import SendIcon from "@mui/icons-material/Send";
@@ -10,6 +12,7 @@ import emailjs from "@emailjs/browser";
 const Contact = () => {
   const {
     control,
+    reset,
     formState: { errors },
   } = useForm({
     defaultValues: {
@@ -20,6 +23,9 @@ const Contact = () => {
     },
     mode: "onBlur",
   });
+
+  const [open, setOpen] = React.useState(false);
+  const [success, setSuccess] = React.useState("");
 
   const form = useRef();
 
@@ -36,14 +42,27 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
+          setSuccess(true);
         },
         (error) => {
           console.log(error.text);
+          setSuccess(false);
         }
       );
   };
 
-  const onSubmit = (e) => sendEmail(e);
+  const handleClose = (event, reason) => {
+    if (reason === "clickaway") {
+      return;
+    }
+    setOpen(false);
+  };
+
+  const onSubmit = (e) => {
+    sendEmail(e);
+    setOpen(true);
+    reset({ name: "", email: "", asunto: "", message: "" });
+  };
 
   const ValidationTextField = styled(TextField)({
     "& .MuiInputLabel-root.Mui-focused": {
@@ -200,6 +219,27 @@ const Contact = () => {
           >
             Enviar
           </ColorButton>
+          <Snackbar open={open} autoHideDuration={3000} onClose={handleClose}>
+            {success === false ? (
+              <Alert
+                onClose={handleClose}
+                variant="filled"
+                severity="error"
+                sx={{ width: "100%" }}
+              >
+                Error al enviar su mensaje
+              </Alert>
+            ) : (
+              <Alert
+                onClose={handleClose}
+                variant="filled"
+                severity="success"
+                sx={{ width: "100%" }}
+              >
+                Mensaje enviado con exito!
+              </Alert>
+            )}
+          </Snackbar>
         </form>
       </div>
     </div>
