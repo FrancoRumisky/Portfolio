@@ -290,7 +290,18 @@
 
 .instaContainer,
 .insta:nth-child(1) {
-  transition: all 350ms;
+  transition: all 200ms;
+}
+
+.PDFPreviewContainer {
+  background-color: var(--golden-color);
+  width: 45px;
+  border-radius: 0 2px 2px 0;
+}
+
+.PDFPreviewContainer,
+.PDFPreview:nth-child(1) {
+  transition: all 200ms;
 }
 
 .linkeContainer:hover,
@@ -298,7 +309,9 @@
 .gitContainer:hover,
 .gitContainer:hover .git,
 .instaContainer:hover,
-.instaContainer:hover .insta {
+.instaContainer:hover .insta,
+.PDFPreviewContainer:hover,
+.PDFPreviewContainer:hover .PDFPreview  {
   width: 52px;
   transition: all 300ms;
 }

@@ -6,6 +6,7 @@ import s from "../AppBar/AppBar.module.css";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
 
 function AppBar(props) {
   const [state, setState] = React.useState(false);
@@ -94,6 +95,11 @@ function AppBar(props) {
         <a href="https://www.instagram.com/franco.rumisky/" target="_blank" rel="noreferrer">
         <div className={s.instaContainer}>
           <InstagramIcon sx={{ fontSize: "40px"}} className={s.insta} />
+        </div>
+        </a>
+        <a href="./Franco Rumisky CV Diseño 2023.pdf" target="_blank" rel="noreferrer">
+        <div className={s.PDFPreviewContainer}>
+          <PictureAsPdfIcon sx={{ fontSize: "40px"}} className={s.PDFPreview} />
         </div>
         </a>
       </div>

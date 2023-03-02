@@ -3,7 +3,7 @@ import AwesomeSlider from "react-awesome-slider";
 import styled from "react-awesome-slider/src/styles";
 import "react-awesome-slider/dist/custom-animations/cube-animation.css";
 import s from "./Proyects.module.css";
-
+// !Corregir bug background image 
 function proyects() {
   const slider = (
     <AwesomeSlider animation="cubeAnimation" cssModule={styled}>
