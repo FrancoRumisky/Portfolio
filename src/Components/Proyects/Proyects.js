@@ -9,7 +9,7 @@ function proyects() {
     <AwesomeSlider animation="cubeAnimation" cssModule={styled}>
       <div data-src="/img/weather.png">
         <a
-          href="https://weather-app-production-5be8.up.railway.app/"
+          href="https://weather-app-orpin-theta.vercel.app/"
           rel="noreferrer"
           target="_blank"
         >
