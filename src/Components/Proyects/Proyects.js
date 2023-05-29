@@ -16,17 +16,48 @@ function proyects() {
           <p className={s.parrafo}>
             <span>Weather App</span>
           </p>
+          <div className={s.techContainer}>
+          <p className={s.tecn}>
+            <span>React</span>
+          </p>
+          <p className={s.tecn}>
+            <span>Material UI</span>
+          </p>
+          <p className={s.tecn}>
+            <span>Typescript</span>
+          </p>
+          <p className={s.tecn}>
+            <span>Geolocalización</span>
+          </p>
+          </div>
         </a>
       </div>
       <div data-src="/img/videogames.png">
         <a
-          href="https://videogamesapp-production.up.railway.app/"
+          href="https://video-games-main.vercel.app/"
           rel="noreferrer"
           target="_blank"
         >
           <p className={s.parrafo}>
             <span>Videogames App</span>
           </p>
+          <div className={s.techContainer}>
+          <p className={s.tecn}>
+            <span>React</span>
+          </p>
+          <p className={s.tecn}>
+            <span>Redux</span>
+          </p>
+          <p className={s.tecn}>
+            <span>Node</span>
+          </p>
+          <p className={s.tecn}>
+            <span>Sequelize</span>
+          </p>
+          <p className={s.tecn}>
+            <span>PostgreSQL</span>
+          </p>
+          </div>
         </a>
       </div>
       <div data-src="/img/changapp.png">
@@ -38,6 +69,23 @@ function proyects() {
           <p className={s.parrafo}>
             <span>ChangApp</span>
           </p>
+          <div className={s.techContainer}>
+          <p className={s.tecn}>
+            <span>React</span>
+          </p>
+          <p className={s.tecn}>
+            <span>Redux</span>
+          </p>
+          <p className={s.tecn}>
+            <span>Sequelize</span>
+          </p>
+          <p className={s.tecn}>
+            <span>PostgreSQL</span>
+          </p>
+          <p className={s.tecn}>
+            <span>Bootstrap</span>
+          </p>
+          </div>
         </a>
       </div>
     </AwesomeSlider>
@@ -50,7 +98,8 @@ function proyects() {
           <p>PRO</p>
           <p>YECTOS</p>
         </span>
-        <div className={s.container1}>{slider}</div>
+        <div className={s.container1}><div>
+          </div>{slider}</div>
       </div>
     </>
   );

@@ -132,6 +132,7 @@
   width: 70%;
   position: relative;
   top: 2%;
+  
 }
 
 .container1:hover img {
@@ -149,6 +150,9 @@
 
 .container1 :nth-child(1){
   align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .parrafo {
@@ -188,6 +192,27 @@
   backface-visibility: hidden;
 }
 
+.techContainer{
+  display: flex;
+}
+
+.tecn{
+  position: relative;
+  background-color:rgba(56, 55, 55, 0.137);
+  padding: 5px;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tecn span{
+  color:var(--golden-color);
+}
+
+a:link,a:visited,a:focus{
+text-decoration: none;
+}
 
 @keyframes aitf {
   0% {
@@ -211,10 +236,22 @@
   .container1:hover img {
     filter: none;
   }
+  .tecn{
+    font-size: 0.7em;
+  }
+}
+
+@media (max-width: 740px){
+  .tecn{
+    font-size: 0.5em;
+  }
 }
 
 @media(max-width:500px){
     .container span{
-        font-size: 1.5em;
+        font-size: 1.5em;  
+    }
+    .tecn{
+      font-size: 0.3em;
     }
 }
