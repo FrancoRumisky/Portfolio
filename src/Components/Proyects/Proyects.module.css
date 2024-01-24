@@ -157,7 +157,6 @@
 
 .parrafo {
   position: relative;
-  text-transform: uppercase;
   letter-spacing: 0.5em;
   display: inline-block;
   width: 40em;
@@ -208,6 +207,10 @@
 
 .tecn span{
   color:var(--golden-color);
+}
+
+.video{
+  position: absolute;
 }
 
 a:link,a:visited,a:focus{
