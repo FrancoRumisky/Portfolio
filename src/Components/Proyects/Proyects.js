@@ -7,6 +7,31 @@ import s from "./Proyects.module.css";
 function proyects() {
   const slider = (
     <AwesomeSlider animation="cubeAnimation" cssModule={styled}>
+      <div data-src="/img/RD.png">
+        <a
+          href="https://www.rdpintordepiscinas.com/"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <p className={s.parrafo}>
+            <span>RD Pintores</span>
+          </p>
+          <div className={s.techContainer}>
+          <p className={s.tecn}>
+            <span>React</span>
+          </p>
+          <p className={s.tecn}>
+            <span>Material UI</span>
+          </p>
+          <p className={s.tecn}>
+            <span>Email JS</span>
+          </p>
+          <p className={s.tecn}>
+            <span>CSS module</span>
+          </p>
+          </div>
+        </a>
+      </div>
       <div data-src="/img/weather.png">
         <a
           href="https://weather-app-orpin-theta.vercel.app/"
