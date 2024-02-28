@@ -97,7 +97,7 @@ function AppBar(props) {
           <InstagramIcon sx={{ fontSize: "40px"}} className={s.insta} />
         </div>
         </a>
-        <a href="./Franco Rumisky CV Diseño 2023.pdf" target="_blank" rel="noreferrer">
+        <a href="./Franco Rumisky CV plano 2024" target="_blank" rel="noreferrer">
         <div className={s.PDFPreviewContainer}>
           <PictureAsPdfIcon sx={{ fontSize: "40px"}} className={s.PDFPreview} />
         </div>
